@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viforcos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    
+    <style>
+        .font-playfair {
+            font-family: "Playfair Display", serif;
+            letter-spacing: 2px;
+            }
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+
+        .carrousel-item{
+            height: 600px;
+        }
+    </style>
+    </head>
+<body data-collapse-toggle="">
+<section class="bg-lime-800 py-16 text-white">
+  <div class="max-w-6xl mx-auto px-4">
+
+    <!-- HERO -->
+    <div class="text-center mb-12">
+       <span class="text-white font-bold text-2xl  md:text-4xl font-playfair hover:scale-105 transition flex items-center justify-center gap-5 pb-6"><img class="md:w-64   w-64 " src="assets/img/logo.png"></span>
+
+      <h1 class="font-playfair mt-3 text-4xl md:text-5xl font-bold ">
+        Normas de uso de las zonas de recreo
+      </h1>
+
+      <div class="mt-6 max-w-3xl mx-auto space-y-3 text-white">
+        <p>
+          Desde la Junta Vecinal de Viforcos queremos comunicar las normas de uso cívicas y responsables,
+          tanto de las instalaciones como del medio ambiente.
+        </p>
+        <p>
+          Es un servicio gratuito para todas aquellas personas que quieran pasar el día disfrutando de nuestro pueblo y su entorno.
+        </p>
+      </div>
+    </div>
+
+    <!-- NAVEGACIÓN INTERNA -->
+    <nav class="mb-14">
+      <div class="flex gap-3 text-sm flex-wrap pb-2 justify-center ">
+        <a href="#zonas" class="px-4 py-2 bg-lime-600  rounded-full hover:scale-105 transition">Zonas</a>
+        <a href="#antes" class="px-4 py-2 bg-lime-600  rounded-full hover:scale-105 transition">Antes de venir</a>
+        <a href="#durante" class="px-4 py-2 bg-lime-600  rounded-full hover:scale-105 transition">Cuando estés aquí</a>
+        <a href="#reserva" class="px-4 py-2 bg-lime-600  rounded-full hover:scale-105 transition">Reserva</a>
+        <a href="#horno" class="px-4 py-2 bg-lime-600  rounded-full hover:scale-105 transition">Horno</a>
+        <a href="#barbacoas" class="px-4 py-2 bg-lime-600  rounded-full hover:scale-105 transition">Barbacoas</a>
+        <a href="#seguridad" class="px-4 py-2 bg-lime-600  rounded-full hover:scale-105 transition">Seguridad</a>
+        <a href="#autorizacion" class="px-4 py-2 bg-lime-600  rounded-full hover:scale-105 transition">Autorización</a>
+        <a href="#residuos" class="px-4 py-2 bg-lime-600  rounded-full hover:scale-105 transition">Residuos</a>
+      </div>
+    </nav>
+
+    <!-- ZONAS -->
+    <section id="zonas" class="mb-14">
+      <h2 class="font-playfair text-3xl font-bold  mb-4">
+        Zonas de recreo disponibles
+      </h2>
+
+      <p class="text-white mb-8">
+        En Viforcos disponemos actualmente de 4 zonas de recreo:
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="bg-lime-600 hover:scale-105 transition rounded-2xl shadow-sm  p-6">
+          <h3 class="text-xl font-bold text-white">Merendero de Las Erinas</h3>
+          <p class="mt-3 text-white">
+            3 barbacoas, 1 horno de leña, agua potable tratada y capacidad bajo cubierto para 18 personas
+            y para 8 personas a la intemperie.
+          </p>
+        </article>
+
+        <article class="bg-lime-600 hover:scale-105 transition rounded-2xl shadow-sm  p-6">
+          <h3 class="text-xl font-bold text-white">Mesa en el entorno de Los Molinos de La Canal</h3>
+          <p class="mt-3 text-white">
+            Capacidad para 8 personas y manantial de agua no tratada a 100 metros.
+          </p>
+        </article>
+
+        <article class="bg-lime-600 hover:scale-105 transition rounded-2xl shadow-sm  p-6">
+          <h3 class="text-xl font-bold text-white">Merendero de San Antolín</h3>
+          <p class="mt-3 text-white">
+            3 mesas con capacidad para 24 personas y fuente de agua potable y tratada.
+          </p>
+        </article>
+
+        <article class="bg-lime-600 hover:scale-105 transition rounded-2xl shadow-sm  p-6">
+          <h3 class="text-xl font-bold text-white">Refugio de Los Mineros</h3>
+          <p class="mt-3 text-white">
+            Capacidad para dormir 10 personas, manantial de agua no tratada a 200 metros y chimenea.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ANTES / DURANTE -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-14">
+
+      <!-- ANTES -->
+      <section id="antes" class="bg-lime-600 rounded-2xl hover:scale-105 transition shadow-sm  p-6">
+        <h2 class="font-playfair text-3xl font-extrabold  mb-6">
+          Antes de venir
+        </h2>
+
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-lg font-extrabold text-rose-300">INFÓRMATE</h3>
+            <p class="mt-2 text-white">
+              Prepara tu recorrido. Hay una gran variedad de rutas, adáptala a tus capacidades e intereses.
+              Consulta la predicción meteorológica.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold text-rose-300">EQUÍPATE</h3>
+            <p class="mt-2 text-white">
+              Trae ropa y calzado apropiados. Lleva teléfono móvil, agua, gorra, protección solar y recuerda:
+              esto es León, trae una “chaquetina” por si refresca.
+            </p>
+
+            <p class="mt-3 text-white">
+              Si vienes solo, avisa a alguien de tu recorrido.
+            </p>
+
+            <p class="mt-3 text-white">
+              En época de caza, trae ropa reflectante.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- DURANTE -->
+      <section id="durante" class="bg-lime-600 rounded-2xl hover:scale-105 transition shadow-sm  p-6">
+        <h2 class="font-playfair text-3xl font-extrabold  mb-6">
+          Cuando estés aquí
+        </h2>
+
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-lg font-extrabold text-white">Estaciona correctamente</h3>
+            <p class="mt-2 text-white">
+              Si llegas en vehículo particular, estaciona en un lugar indicado para ello. En su defecto,
+              no causes molestias que puedan dificultar o impedir atender una urgencia.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold text-white">Perros</h3>
+            <p class="mt-2 text-white">
+              Si te acompaña tu mascota, siempre con responsabilidad. Y recuerda, hay otros perros que
+              guardan el ganado y coto de caza.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-extrabold text-white">Fauna y flora</h3>
+            <p class="mt-2 text-white">
+              Disfruta de ellas, pero evita molestar la fauna y dañar la flora. Observa los animales de lejos,
+              recuerda, son salvajes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- RESERVA -->
+    <section id="reserva" class="bg-lime-600 text-white rounded-3xl p-8 md:p-10 mb-14 hover:scale-105 transition">
+      <h2 class="font-playfair text-3xl font-extrabold mb-6">
+        Reserva del merendero
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="font-extrabold text-rose-300">¿Hay que realizar reserva?</h3>
+          <p class="mt-2 ">
+            Solamente hay que hacer reserva para la utilización del Merendero de Las Erinas.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-extrabold text-rose-300">¿Cómo y dónde realizar la reserva?</h3>
+          <p class="mt-2 ">
+            A través del correo electrónico:
+          </p>
+          <a href="mailto:juntavecinalviforcos@hotmail.com" class="block mt-2 font-bold underline">
+            juntavecinalviforcos@hotmail.com
+          </a>
+          <p class="mt-3 ">
+            La reserva debe hacerse con una antelación máxima de 48 horas al día que se quiera utilizar el servicio.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-extrabold text-rose-300">¿Qué hay que indicar en la solicitud?</h3>
+          <p class="mt-2 ">
+            Nombre, fotocopia del DNI del solicitante y responsable, teléfono móvil, día y hora de la solicitud
+            y número de personas que lo van a utilizar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORNO -->
+    <section id="horno" class="bg-lime-600 rounded-2xl shadow-sm  p-6 md:p-8 mb-10">
+      <h2 class="font-playfair text-3xl font-extrabold  mb-4">
+        Uso del horno de leña
+      </h2>
+
+      <p class="text-white mb-5">
+        El modo de calentamiento es sencillo:
+      </p>
+
+      <ol class="list-decimal pl-5 space-y-3 text-white">
+        <li>
+          Para prender el fuego, mete la leña en forma de pirámide. Se aconseja usar leña de encina o roble,
+          ya que son las que más calor desprenden.
+        </li>
+        <li>
+          Entre la leña, pon papel y tablas o palitos finos que no contengan pinturas o tintes de barniz.
+        </li>
+        <li>
+          La leña necesaria no es mucha: bastará con 3 o 4 trozos medianos. Con un saco de 15 kg tendrás de sobra.
+        </li>
+        <li>
+          No se puede echar todo de una vez. Es mejor ir suministrando leña a medida que se va quemando.
+          Lo que se necesita principalmente para calentarlo es llama viva.
+        </li>
+        <li>
+          Durante el calentamiento, cuando la leña se esté quemando, es necesario abrir el tiro superior e inferior
+          o el sistema antihumos.
+        </li>
+        <li>
+          En algún caso será necesario tener la puerta entreabierta, sobre todo al encender,
+          para que las llamas no se ahoguen.
+        </li>
+        <li>
+          El horno debe subir hasta los 400 ºC. Lo notarás visualmente porque la cúpula interior pasará
+          de color negro a blanco rojizo.
+        </li>
+        <li>
+          Cuando el horno caliente, aparta las brasas hacia el contorno interior o sácalas,
+          dependiendo de lo que quieras cocinar.
+        </li>
+        <li>
+          Una vez que la temperatura descienda hasta la deseada, normalmente entre los 250 ºC,
+          hay que cerrar los tiros o el sistema antihumo.
+        </li>
+        <li>
+          Ya solo queda meter las cazuelas o asadores con los alimentos que quieras cocinar.
+        </li>
+        <li>
+          El tiempo de calentamiento puede variar entre 30 y 50 minutos.
+        </li>
+      </ol>
+    </section>
+
+    <!-- BARBACOAS -->
+    <section id="barbacoas" class="bg-lime-600 rounded-2xl shadow-sm  p-6 md:p-8 mb-10">
+      <h2 class="font-playfair text-3xl font-bold  mb-4">
+        Uso de las barbacoas
+      </h2>
+
+      <ol class="list-decimal pl-5 space-y-3 text-white">
+        <li>
+          Utilizar en las barbacoas solo y exclusivamente carbón vegetal.
+        </li>
+        <li>
+          Una vez terminada la barbacoa, apagar completamente las brasas con agua.
+        </li>
+        <li>
+          En las barbacoas exteriores, rociar agua alrededor de la barbacoa para evitar incendios
+          ante la caída de brasas a la hierba.
+        </li>
+        <li>
+          Al terminar, dejar las barbacoas como te gustaría encontrarlas la próxima vez que vayas a usarlas.
+        </li>
+        <li>
+          Limpia la zona y no dejes desperdicios. Encontrarás contenedores de basura a lo largo del pueblo.
+        </li>
+      </ol>
+    </section>
+
+    <!-- SEGURIDAD / AUTORIZACIÓN -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-14">
+
+      <section id="seguridad" class="bg-red-400 rounded-2xl  p-6 hover:scale-105 transition">
+        <h2 class="font-playfair text-3xl font-extrabold text-red-700 mb-4">
+          Fuego y seguridad
+        </h2>
+
+        <div class="space-y-4 text-white">
+          <p>
+            En los meses de junio, julio, agosto y septiembre, o cuando la Junta de Castilla y León lo crea conveniente,
+            está prohibido hacer fuego en las zonas habilitadas para dicho fin.
+          </p>
+          <p>
+            El merendero dispone de un armario contra incendios, equipado con todo el material necesario
+            para utilizar en caso de extrema necesidad.
+          </p>
+          <p>
+            También se dispone de una boca de incendios debidamente señalizada a 10 metros.
+            Localízala y familiarízate con su situación.
+          </p>
+          <p class="font-extrabold text-red-700">
+            En caso de emergencia, llama al 112.
+          </p>
+          <p>
+            La Junta Vecinal de Viforcos no se responsabiliza del mal uso de las instalaciones.
+          </p>
+        </div>
+      </section>
+
+      <section id="autorizacion" class="bg-lime-600 rounded-2xl shadow-sm  p-6 hover:scale-105 transition">
+        <h2 class="font-playfair text-3xl font-extrabold  mb-4">
+          Uso sin autorización
+        </h2>
+
+        <h3 class="font-bold text-white mb-3">
+          ¿Qué ocurrirá si utilizo las barbacoas sin autorización de la Junta Vecinal?
+        </h3>
+
+        <div class="space-y-4 text-white">
+          <p>
+            Por el buen funcionamiento, el civismo de los usuarios y el respeto a aquellas personas que han solicitado
+            dicho servicio, no se deben utilizar las instalaciones sin la autorización pertinente.
+          </p>
+          <p>
+            Todo usuario con autorización tiene que estar en posesión física de la misma, expedida por la Junta Vecinal,
+            para poder presentarla en caso de que le sea requerida por la autoridad pertinente.
+          </p>
+          <p>
+            En caso de no disponer de autorización y hacer caso omiso a estas indicaciones de obligado cumplimiento,
+            se dará parte a la autoridad pertinente.
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- RESIDUOS -->
+    <section id="residuos" class="bg-lime-600 rounded-2xl shadow-sm  p-6 md:p-8 mb-14">
+      <h2 class="font-playfair text-3xl font-extrabold  mb-6">
+        Residuos y limpieza
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div>
+          <h3 class="text-lg font-extrabold text-white">Residuos</h3>
+          <p class="mt-2 text-white">
+            Sé responsable de tus residuos. Trae una bolsa y deposítala en un contenedor.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-extrabold text-white">Mascarillas</h3>
+          <p class="mt-2 text-white">
+            Si tienes que deshacerte de ella, espera a poder realizarlo en un lugar apropiado.
+            Guárdala en tu bolsillo o mochila. El suelo no es una opción.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-extrabold text-white">Fregadero</h3>
+          <p class="mt-2 text-white">
+            Está prohibido utilizar en el fregadero jabones industriales, tipo Fairy, o lejías,
+            debido a que las aguas sobrantes se utilizan para regar los árboles del merendero.
+          </p>
+        </div>
+      </div>
+
+      <p class="mt-6 text-white font-medium text-center">
+        Es obligatorio dejar las basuras en los contenedores que se pueden encontrar en varios puntos del pueblo.
+      </p>
+    </section>
+
+    <!-- CIERRE -->
+    <section class="text-center bg-lime-600 rounded-3xl px-6 py-10 text-white">
+      <h2 class="font-playfair text-3xl font-extrabold">
+        Nos vemos
+      </h2>
+
+      <p class="mt-4 max-w-2xl mx-auto ">
+        Sé eco friendly. Que no se note que has estado aquí. Conserva la naturaleza disfrutando de ella.
+      </p>
+
+      <p class="mt-6 ">
+        Y sobre todo, utiliza y disfruta de las instalaciones, pero no olvides:
+      </p>
+
+      <p class="mt-4 text-2xl font-extrabold text-rose-300">
+        Deja el merendero como te gustaría encontrarlo.
+      </p>
+    </section>
+
+  </div>
+</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+       
+<script src="https://cdn.jsdelivr.net/npm/lucide@1.7.0/dist/umd/lucide.min.js"></script>
+
+<script>lucide.createIcons();</script>
+
+
+</body>
+</html>

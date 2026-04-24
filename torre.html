@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torre Vieja</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    
+    <style>
+        .font-playfair {
+            font-family: "Playfair Display", serif;
+            letter-spacing: 2px;
+            }
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+
+        .carrousel-item{
+            height: 600px;
+        }
+    </style>
+    </head>
+<body>
+    <section id="rutas" class="bg-lime-800">
+
+  <!-- HERO -->
+  <div class="relative h-[70vh] min-h-[480px] overflow-hidden">
+    <img
+      src="assets/img/viforcos/Torre1.jpg"
+      alt="Torre Vieja de Viforcos"
+      class="absolute inset-0 w-full h-full object-cover object-center"
+    >
+    <div class="absolute inset-0 bg-black/45"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-6 h-full flex items-center">
+      <div class="max-w-3xl text-white">
+        <span class="inline-block mb-4 px-4 py-2 rounded-full bg-white/15 backdrop-blur-sm text-sm font-medium">
+          Historia · Tradición · Origen
+        </span>
+
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-5 font-playfair">
+          Torre Vieja
+        </h1>
+
+        <p class="text-lg md:text-2xl text-white/90 mb-8 max-w-2xl">
+          Vestigio del antiguo asentamiento de Viforcos y símbolo de su historia más antigua.
+        </p>
+
+        <a
+          href="#torre-vieja"
+          class="inline-flex items-center gap-2 bg-lime-600 hover:bg-lime-700 text-white font-semibold px-6 py-4 rounded-lg transition"
+        >
+          Conocer su historia
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div id="torre-vieja" class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+    <div class="max-w-4xl mx-auto text-center mb-14">
+      <span class="text-lime-400 font-semibold uppercase tracking-wide text-sm">
+        Patrimonio
+      </span>
+
+      <h2 class="mt-3 text-3xl md:text-5xl font-bold text-white font-playfair">
+        El origen del pueblo
+      </h2>
+
+      <p class="mt-6 text-lg text-white leading-relaxed">
+        La Torre Vieja pertenecía a la Iglesia en honor a Santa Marina. Según el saber popular,
+        se encuentra en el primer asentamiento del pueblo de Viforcos.
+      </p>
+
+      <p class="mt-4 text-lg text-white leading-relaxed">
+        Tras una epidemia de peste, los habitantes decidieron trasladarse aproximadamente un kilómetro
+        desde el lugar original, formando el Viforcos que ha llegado hasta nuestros días. Aunque no existe
+        documentación que lo confirme, esta historia ha pasado de generación en generación como parte de la tradición oral.
+      </p>
+    </div>
+
+    <!-- ICONOS -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      <div class="rounded-2xl rounded bg-lime-600 p-6 text-center shadow-sm hover:shadow-md transition">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
+          <i data-lucide="landmark" class="w-7 h-7 text-lime-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Iglesia original</h3>
+        <p class="text-white">
+          La torre pertenecía a la antigua iglesia dedicada a Santa Marina.
+        </p>
+      </div>
+
+      <div class="rounded-2xl rounded p-6 text-center bg-lime-600 shadow-sm hover:shadow-md transition">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
+          <i data-lucide="map" class="w-7 h-7 text-lime-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Primer asentamiento</h3>
+        <p class="text-white">
+          Se sitúa en el lugar donde originalmente se encontraba el pueblo.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-lime-600 p-6 text-center shadow-sm hover:shadow-md transition">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
+          <i data-lucide="alert-triangle" class="w-7 h-7 text-lime-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">La peste</h3>
+        <p class="text-white">
+          Una epidemia provocó el traslado del asentamiento a su ubicación actual.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-lime-600  p-6 text-center shadow-sm hover:shadow-md transition">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
+          <i data-lucide="route" class="w-7 h-7 text-lime-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Cruce de caminos</h3>
+        <p class="text-white">
+          Hoy marca la bifurcación hacia Argañoso o Viforcos.
+        </p>
+      </div>
+    </div>
+
+
+    <!-- CTA -->
+    <div class="rounded-3xl bg-lime-600 text-white px-8 py-12 md:px-14 md:py-16 text-center">
+      <span class="text-white/80 uppercase tracking-wide text-sm font-semibold">
+        Historia de Viforcos
+      </span>
+
+      <h2 class="mt-3 text-3xl md:text-5xl font-bold font-playfair">
+        Un símbolo del origen del pueblo
+      </h2>
+
+      <p class="mt-5 max-w-3xl mx-auto text-white/90 text-lg leading-relaxed">
+        De aquel primer asentamiento solo se conserva la torre del campanario, que hoy forma parte del camino
+        y nos guía hacia Argañoso o hacia Viforcos, recordándonos el origen y la historia del pueblo.
+      </p>
+
+
+    </div>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+       
+<script src="https://cdn.jsdelivr.net/npm/lucide@1.7.0/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+
+
+</body>
+</html>

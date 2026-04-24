@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuelas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    
+    <style>
+        .font-playfair {
+            font-family: "Playfair Display", serif;
+            letter-spacing: 2px;
+            }
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+
+        .carrousel-item{
+            height: 600px;
+        }
+    </style>
+    </head>
+<body>
+    <section id="rutas" class="bg-lime-800">
+
+  <!-- HERO -->
+  <div class="relative h-[70vh] min-h-[480px] overflow-hidden">
+    <img
+      src="assets/img/Escuelas/EscuelaVIeja1.jpg"
+      alt="Escuelas de Viforcos"
+      class="absolute inset-0 w-full h-full object-cover"
+    >
+    <div class="absolute inset-0 bg-black/45"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-6 h-full flex items-center">
+      <div class="max-w-3xl text-white">
+        <span class="inline-block mb-4 px-4 py-2 rounded-full bg-white/15 backdrop-blur-sm text-sm font-medium">
+          Historia · Educación · Comunidad
+        </span>
+
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-5 font-playfair">
+          Escuelas de Viforcos
+        </h1>
+
+        <p class="text-lg md:text-2xl text-white/90 mb-8 max-w-2xl">
+          Un recorrido por la educación rural, la vida en comunidad y la evolución del pueblo a través de sus escuelas.
+        </p>
+
+        <a
+          href="#escuelas"
+          class="inline-flex items-center gap-2 bg-lime-600 hover:bg-lime-700 text-white font-semibold px-6 py-4 rounded-lg transition"
+        >
+          Descubrir su historia
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div id="escuelas" class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+    <div class="max-w-4xl mx-auto text-center mb-14">
+      <span class="text-lime-400 font-semibold uppercase tracking-wide text-sm">
+        Educación
+      </span>
+
+      <h2 class="mt-3 text-3xl md:text-5xl font-bold text-white font-playfair">
+        Aprender en tiempos difíciles
+      </h2>
+
+      <p class="mt-6 text-lg text-white leading-relaxed">
+        Según Madoz (1845-50), Viforcos ya contaba con una escuela de primeras letras a mediados del siglo XIX, 
+        dotada con 420 reales y a la que asistían unos 20 niños.
+      </p>
+
+      <p class="mt-4 text-lg text-white leading-relaxed">
+        Posteriormente se construyó una escuela de piedra, datada oficialmente en 1900 aunque se sabe que es anterior. 
+        En ella convivían en un mismo aula niños de distintas edades y sin diferenciación de género, 
+        compartiendo bancos corridos y aprendiendo juntos las primeras nociones de lectura, escritura y matemáticas.
+      </p>
+    </div>
+
+    <!-- ICONOS -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      <div class="rounded-2xl rounded bg-lime-600 p-6 text-center shadow-sm hover:shadow-md transition">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
+          <i data-lucide="book" class="w-7 h-7 text-lime-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Educación rural</h3>
+        <p class="text-white">
+          Escuelas con recursos limitados pero fundamentales para el aprendizaje.
+        </p>
+      </div>
+
+      <div class="rounded-2xl rounded p-6 text-center bg-lime-600 shadow-sm hover:shadow-md transition">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
+          <i data-lucide="users" class="w-7 h-7 text-lime-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Aula única</h3>
+        <p class="text-white">
+          Niños de todas las edades aprendían juntos en un mismo espacio.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-lime-600 p-6 text-center shadow-sm hover:shadow-md transition">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
+          <i data-lucide="home" class="w-7 h-7 text-lime-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Escuela y vivienda</h3>
+        <p class="text-white">
+          El aula estaba abajo y la vivienda de la maestra o maestro arriba.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-lime-600  p-6 text-center shadow-sm hover:shadow-md transition">
+        <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
+          <i data-lucide="building" class="w-7 h-7 text-lime-600"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-white mb-2">Evolución</h3>
+        <p class="text-white">
+          De escuela rural a espacios sociales y de ocio para el pueblo.
+        </p>
+      </div>
+    </div>
+
+    <!-- GALERÍA -->
+    <div class="mb-16">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+        <div>
+          <span class="text-lime-500 font-semibold uppercase tracking-wide text-sm">
+            Recuerdo
+          </span>
+          <h2 class="mt-2 text-3xl md:text-4xl font-bold text-white font-playfair">
+            Espacios de aprendizaje y convivencia
+          </h2>
+        </div>
+
+        <p class="text-white max-w-xl">
+          Edificios que marcaron generaciones y que hoy siguen siendo parte de la vida del pueblo.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="overflow-hidden rounded-2xl shadow-sm">
+          <img src="assets/img/Escuelas/EscuelaVIeja17.jpg" class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+        </div>
+
+        <div class="overflow-hidden rounded-2xl shadow-sm">
+          <img src="assets/img/Escuelas/EscuelaNueva1.jpg" class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+        </div>
+
+        <div class="overflow-hidden rounded-2xl shadow-sm">
+          <img src="assets/img/Escuelas/EscuelaVieja29.jpg" class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="rounded-3xl bg-lime-600 text-white px-8 py-12 md:px-14 md:py-16 text-center">
+      <span class="text-white/80 uppercase tracking-wide text-sm font-semibold">
+        Historia de Viforcos
+      </span>
+
+      <h2 class="mt-3 text-3xl md:text-5xl font-bold font-playfair">
+        De escuela a punto de encuentro
+      </h2>
+
+      <p class="mt-5 max-w-3xl mx-auto text-white/90 text-lg leading-relaxed">
+        La escuela fue suprimida en 1975 debido a la despoblación rural. Hoy, estos edificios han sido restaurados 
+        y convertidos en espacios sociales como teleclub o bar, manteniendo su esencia como punto de reunión 
+        donde vecinos y visitantes siguen compartiendo historias.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+       
+<script src="https://cdn.jsdelivr.net/npm/lucide@1.7.0/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+
+
+</body>
+</html>
