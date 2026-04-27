@@ -33,7 +33,7 @@
       alt="Molinos en Viforcos"
       class="absolute inset-0 w-full h-full object-cover"
     >
-    <div class="absolute inset-0 bg-black/45"></div>
+    <div class="absolute inset-0 bg-black/40"></div>
 
     <div class="relative z-10 max-w-6xl mx-auto px-6 h-full flex items-center">
       <div class="max-w-3xl text-white">
@@ -141,32 +141,30 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="overflow-hidden rounded-2xl shadow-sm">
-          <img
-            src="assets/img/Molinos/MolinoAgua16.jpg"
-            alt="Vestigios de molino en Viforcos"
-            class="w-full h-80 object-cover hover:scale-105 transition duration-500"
-          >
+       <div class="relative w-full mx-auto overflow-hidden rounded-2xl shadow-lg">
+
+        <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+          <img src="assets/img/Molinos/MolinoAgua10.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/Molinos/MolinoAgua13.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/Molinos/MolinoAgua15.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/Molinos/MolinoAgua16.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/Molinos/MolinoAgua25.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/Molinos/MolinoAgua4.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/Molinos/MolinoAgua3.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/Molinos/MolinoAgua5.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+            <img src="assets/img/Molinos/MolinoAgua7.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
         </div>
 
-        <div class="overflow-hidden rounded-2xl shadow-sm">
-          <img
-            src="assets/img/Molinos/MolinoAgua10.jpg"
-            alt="Entorno natural de los molinos en Viforcos"
-            class="w-full h-80 object-cover hover:scale-105 transition duration-500"
-          >
-        </div>
+        <button onclick="prevSlide()" class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center text-3xl">
+          ‹
+        </button>
 
-        <div class="overflow-hidden rounded-2xl shadow-sm">
-          <img
-            src="assets/img/Molinos/MolinoAgua3.jpg"
-            alt="Agua y patrimonio en Viforcos"
-            class="w-full h-80 object-cover hover:scale-105 transition duration-500"
-          >
-        </div>
+        <button onclick="nextSlide()" class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center text-3xl">
+          ›
+        </button>
       </div>
     </div>
+
 
     <!-- CTA FINAL -->
     <div class="rounded-3xl bg-lime-600 text-white px-8 py-12 md:px-14 md:py-16 text-center">
@@ -200,6 +198,39 @@
 <script src="https://cdn.jsdelivr.net/npm/lucide@1.7.0/dist/umd/lucide.min.js"></script>
 <script>lucide.createIcons();</script>
 
+<script>
+  lucide.createIcons();
 
+  let index = 0;
+  const carousel = document.getElementById('carousel');
+  const total = carousel.children.length;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % total;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + total) % total;
+    updateCarousel();
+  }
+
+  let startX = 0;
+
+  carousel.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  });
+
+  carousel.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX;
+
+    if (startX - endX > 50) nextSlide();
+    if (endX - startX > 50) prevSlide();
+  });
+</script>
 </body>
 </html>

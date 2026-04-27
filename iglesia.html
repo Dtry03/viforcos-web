@@ -33,7 +33,7 @@
       alt="Iglesia de Santa Catalina en Viforcos"
       class="absolute inset-0 w-full h-full object-cover"
     >
-    <div class="absolute inset-0 bg-black/45"></div>
+    <div class="absolute inset-0 bg-black/40"></div>
 
     <div class="relative z-10 max-w-6xl mx-auto px-6 h-full flex items-center">
       <div class="max-w-3xl text-white">
@@ -143,31 +143,39 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="overflow-hidden rounded-2xl shadow-sm">
-          <img
-            src="assets/img/Iglesia/Altar3.jpg"
-            alt="Iglesia de Santa Catalina en Viforcos"
-            class="w-full h-80 object-cover hover:scale-105 transition duration-500"
-          >
-        </div>
+      <div class="relative w-fullmx-auto overflow-hidden rounded-2xl shadow-lg">
 
-        <div class="overflow-hidden rounded-2xl shadow-sm">
-          <img
-            src="assets/img/Iglesia/Fachada6.jpg"
-            alt="Entorno de la iglesia en Viforcos"
-            class="w-full h-80 object-cover hover:scale-105 transition duration-500"
-          >
-        </div>
+  <!-- Slides -->
+  <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+    <img src="assets/img/Iglesia/Altar1.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+    <img src="assets/img/Iglesia/Altar11.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+    <img src="assets/img/Iglesia/Altar3.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+    <img src="assets/img/Iglesia/Altar6.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+    <img src="assets/img/Iglesia/Artesonado1.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+    <img src="assets/img/Iglesia/Coro.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+    <img src="assets/img/Iglesia/Fachada1.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+    <img src="assets/img/Iglesia/Fachada4.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+    <img src="assets/img/Iglesia/Fachada6.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+    <img src="assets/img/Iglesia/Iglesia3.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+    <img src="assets/img/Iglesia/Iglesia6.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+    <img src="assets/img/Iglesia/PilaBautismal.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+    <img src="assets/img/Iglesia/Pinturas.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" />
+  </div>
 
-        <div class="overflow-hidden rounded-2xl shadow-sm">
-          <img
-            src="assets/img/Iglesia/Iglesia6.jpg"
-            alt="Patrimonio histórico de Viforcos"
-            class="w-full h-80 object-cover hover:scale-105 transition duration-500"
-          >
-        </div>
-      </div>
+  <!-- Botón izquierda -->
+  <button onclick="prevSlide()" class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center">
+    ‹
+  </button>
+
+  <!-- Botón derecha -->
+  <button onclick="nextSlide()" class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center">
+    ›
+  </button>
+
+
+</div>
+
+
     </div>
 
     <!-- CTA FINAL -->
@@ -196,7 +204,44 @@
        
 <script src="https://cdn.jsdelivr.net/npm/lucide@1.7.0/dist/umd/lucide.min.js"></script>
 <script>lucide.createIcons();</script>
+<script>
+  let index = 0;
+  const carousel = document.getElementById('carousel');
+  const dots = document.querySelectorAll('#dots span');
+  const total = carousel.children.length;
 
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('bg-white', i === index);
+      dot.classList.toggle('bg-white/50', i !== index);
+    });
+  }
+
+  function nextSlide() {
+    index = (index + 1) % total;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + total) % total;
+    updateCarousel();
+  }
+
+  // Swipe móvil
+  let startX = 0;
+
+  carousel.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  });
+
+  carousel.addEventListener('touchend', e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) nextSlide();
+    if (endX - startX > 50) prevSlide();
+  });
+</script>
 
 </body>
 </html>

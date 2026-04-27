@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia de los Mineros</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia de los Mineros</title>
 
-    
-    <style>
-        .font-playfair {
-            font-family: "Playfair Display", serif;
-            letter-spacing: 2px;
-            }
-        body{
-            font-family: 'Inter', sans-serif;
-        }
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
 
-        .carrousel-item{
-            height: 600px;
-        }
-    </style>
-    </head>
+  <style>
+    .font-playfair {
+      font-family: "Playfair Display", serif;
+      letter-spacing: 2px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
 <body>
-    <section id="rutas" class="bg-lime-800">
+
+<section id="rutas" class="bg-lime-800">
 
   <!-- HERO -->
   <div class="relative h-[70vh] min-h-[480px] overflow-hidden">
@@ -33,7 +32,8 @@
       alt="Historia de los mineros en Viforcos"
       class="absolute inset-0 w-full h-full object-cover"
     >
-    <div class="absolute inset-0 bg-black/45"></div>
+
+    <div class="absolute inset-0 bg-black/40"></div>
 
     <div class="relative z-10 max-w-6xl mx-auto px-6 h-full flex items-center">
       <div class="max-w-3xl text-white">
@@ -61,6 +61,7 @@
 
   <!-- INTRO -->
   <div id="historia-mineros" class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+
     <div class="max-w-4xl mx-auto text-center mb-14">
       <span class="text-lime-400 font-semibold uppercase tracking-wide text-sm">
         Memoria
@@ -79,9 +80,9 @@
       </p>
     </div>
 
-    <!-- ICONOS / VENTAJAS -->
+    <!-- ICONOS -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-      <div class="rounded-2xl rounded bg-lime-600 p-6 text-center shadow-sm hover:shadow-md transition">
+      <div class="rounded-2xl bg-lime-600 p-6 text-center shadow-sm hover:shadow-md transition">
         <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
           <i data-lucide="pickaxe" class="w-7 h-7 text-lime-600"></i>
         </div>
@@ -91,7 +92,7 @@
         </p>
       </div>
 
-      <div class="rounded-2xl rounded p-6 text-center bg-lime-600 shadow-sm hover:shadow-md transition">
+      <div class="rounded-2xl bg-lime-600 p-6 text-center shadow-sm hover:shadow-md transition">
         <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
           <i data-lucide="snowflake" class="w-7 h-7 text-lime-600"></i>
         </div>
@@ -111,7 +112,7 @@
         </p>
       </div>
 
-      <div class="rounded-2xl bg-lime-600  p-6 text-center shadow-sm hover:shadow-md transition">
+      <div class="rounded-2xl bg-lime-600 p-6 text-center shadow-sm hover:shadow-md transition">
         <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
           <i data-lucide="cross" class="w-7 h-7 text-lime-600"></i>
         </div>
@@ -126,9 +127,10 @@
     <div class="mb-16">
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
         <div>
-          <span class="text-lime-500 font-semibold uppercase tracking-wide text-sm">
+          <span class="text-lime-400 font-semibold uppercase tracking-wide text-sm">
             Recuerdo
           </span>
+
           <h2 class="mt-2 text-3xl md:text-4xl font-bold text-white font-playfair">
             Lugares de memoria y homenaje
           </h2>
@@ -139,30 +141,51 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="overflow-hidden rounded-2xl shadow-sm">
-          <img
-            src="assets/img/Monumento Mineros/PlacaMineros6.jpg"
-            alt="Cruces en recuerdo de los mineros"
-            class="w-full h-80 object-cover hover:scale-105 transition duration-500"
-          >
+      <div class="relative w-full mx-auto overflow-hidden rounded-2xl shadow-lg">
+
+        <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+          <img src="assets/img/HistoriaMineros/Paisaje7.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/HistoriaMineros/Cruces3.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/HistoriaMineros/Cruces4.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/HistoriaMineros/Cruces6.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/HistoriaMineros/Cruces9.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/HistoriaMineros/Cruces12.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/HistoriaMineros/Cruces10.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+          <img src="assets/img/HistoriaMineros/Paisaje18.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
         </div>
 
-        <div class="overflow-hidden rounded-2xl shadow-sm">
-          <img
-            src="assets/img/Monumento Mineros/Vagoneta Viforcos.jpg"
-            alt="Paisaje de la sierra de Viforcos"
-            class="w-full h-80 object-cover hover:scale-105 transition duration-500"
-          >
-        </div>
+        <button onclick="prevSlide()" class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center text-3xl">
+          ‹
+        </button>
 
-        <div class="overflow-hidden rounded-2xl shadow-sm">
-          <img
-            src="assets/img/HistoriaMineros/Cruces9.jpg"
-            alt="Camino y entorno de búsqueda"
-            class="w-full h-80 object-cover hover:scale-105 transition duration-500"
-          >
-        </div>
+        <button onclick="nextSlide()" class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center text-3xl">
+          ›
+        </button>
+      </div>
+    </div>
+
+    <!-- TEXTO AMPLIADO -->
+    <div class="mx-auto mb-16 rounded-3xl bg-white/15 backdrop-blur-sm p-8 md:p-10 text-white">
+      <span class="text-lime-300 font-semibold uppercase tracking-wide text-sm">
+        Las cruces
+      </span>
+
+      <h2 class="font-playfair mt-3 text-3xl md:text-4xl font-bold">
+        Los lugares donde fueron encontrados
+      </h2>
+
+      <div class="mt-6 space-y-5 text-lg leading-relaxed text-white/90">
+        <p>
+          Muy cerca del camino de Argañoso, su padre Vicente García puso una cruz de madera con la que nos topamos hoy en día, en el punto en el que su hijo Joaquín fue encontrado. Poco más adelante, tirando hacia la izquierda, nos encontramos la que marca donde fue encontrado Alberto.
+        </p>
+
+        <p>
+          Día y noche, los pueblos de la contorna estuvieron tocando las campanas, con la esperanza de que su sonido los ayudase a encontrar el camino de regreso a casa. Los vecinos salían en cuadrillas con los perros de los rebaños.
+        </p>
+
+        <p>
+          Del 27 de enero hasta el 4 de abril tuvieron que esperar a que las nieves empezaran a desaparecer, dejando al descubierto primero a Alberto, para poner fin a 3 meses de incesante búsqueda y sufrimiento. Ni Joaquín ni Alberto, por culpa de aquel crudo invierno, sabrán lo cerca que estuvieron de llegar a su pueblo.
+        </p>
       </div>
     </div>
 
@@ -179,17 +202,48 @@
       <p class="mt-5 max-w-3xl mx-auto text-white/90 text-lg leading-relaxed">
         El 27 de enero de 1951, Joaquín y Alberto emprendieron el camino de regreso a casa bajo un duro temporal invernal. La nieve y la noche les hicieron perder la orientación, y los pueblos de la contorna se volcaron en su búsqueda durante meses. Hoy, las cruces que marcan los lugares donde fueron encontrados siguen recordando lo cerca que estuvieron de llegar a su pueblo.
       </p>
-
     </div>
+
   </div>
 </section>
 
-
 <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-       
 <script src="https://cdn.jsdelivr.net/npm/lucide@1.7.0/dist/umd/lucide.min.js"></script>
-<script>lucide.createIcons();</script>
 
+<script>
+  lucide.createIcons();
+
+  let index = 0;
+  const carousel = document.getElementById('carousel');
+  const total = carousel.children.length;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % total;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + total) % total;
+    updateCarousel();
+  }
+
+  let startX = 0;
+
+  carousel.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  });
+
+  carousel.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX;
+
+    if (startX - endX > 50) nextSlide();
+    if (endX - startX > 50) prevSlide();
+  });
+</script>
 
 </body>
 </html>
