@@ -29,7 +29,7 @@
   <!-- HERO -->
   <div class="relative h-[70vh] min-h-[480px] overflow-hidden">
     <img
-      src="assets/img/viforcos/Torre1.jpg"
+      src="assets/img/torre/Torre1.jpg"
       alt="Torre Vieja de Viforcos"
       class="absolute inset-0 w-full h-full object-[50%_35%] object-cover object-fixed"
     >
@@ -124,6 +124,43 @@
         </p>
       </div>
     </div>
+    <div class="mb-16">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+        <div>
+          <span class="text-lime-500 font-semibold uppercase tracking-wide text-sm">
+            Recuerdo
+          </span>
+          <h2 class="mt-2 text-3xl md:text-4xl font-bold text-white font-playfair">
+            Espacios de aprendizaje y convivencia
+          </h2>
+        </div>
+
+        <p class="text-white max-w-xl">
+          Edificios que marcaron generaciones y que hoy siguen siendo parte de la vida del pueblo.
+        </p>
+      </div>
+
+        <div class="relative w-full mx-auto overflow-hidden rounded-2xl shadow-lg">
+
+        <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+     
+          <img src="assets/img/torre/Torre7.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+          <img src="assets/img/torre/Torre10.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+          <img src="assets/img/torre/Torre2.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+          <img src="assets/img/torre/Torre8.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+  
+        </div>
+
+        <button onclick="prevSlide()" class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center text-3xl">
+          ‹
+        </button>
+
+        <button onclick="nextSlide()" class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center text-3xl">
+          ›
+        </button>
+      </div>
+    </div>
+ 
 
 
     <!-- CTA -->
@@ -151,6 +188,44 @@
        
 <script src="https://cdn.jsdelivr.net/npm/lucide@1.7.0/dist/umd/lucide.min.js"></script>
 <script>lucide.createIcons();</script>
+<script>
+  let index = 0;
+  const carousel = document.getElementById('carousel');
+  const dots = document.querySelectorAll('#dots span');
+  const total = carousel.children.length;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('bg-white', i === index);
+      dot.classList.toggle('bg-white/50', i !== index);
+    });
+  }
+
+  function nextSlide() {
+    index = (index + 1) % total;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + total) % total;
+    updateCarousel();
+  }
+
+  // Swipe móvil
+  let startX = 0;
+
+  carousel.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  });
+
+  carousel.addEventListener('touchend', e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) nextSlide();
+    if (endX - startX > 50) prevSlide();
+  });
+</script>
 
 
 </body>

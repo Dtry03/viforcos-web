@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escuelas</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escuelas</title>
 
-    
-    <style>
-        .font-playfair {
-            font-family: "Playfair Display", serif;
-            letter-spacing: 2px;
-            }
-        body{
-            font-family: 'Inter', sans-serif;
-        }
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
 
-        .carrousel-item{
-            height: 600px;
-        }
-    </style>
-    </head>
+  <style>
+    .font-playfair {
+      font-family: "Playfair Display", serif;
+      letter-spacing: 2px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
 <body>
-    <section id="rutas" class="bg-lime-800">
+
+<section id="escuelas" class="bg-lime-800">
 
   <!-- HERO -->
   <div class="relative h-[70vh] min-h-[480px] overflow-hidden">
@@ -50,7 +49,7 @@
         </p>
 
         <a
-          href="#escuelas"
+          href="#contenido-escuelas"
           class="inline-flex items-center gap-2 bg-lime-600 hover:bg-lime-700 text-white font-semibold px-6 py-4 rounded-lg transition"
         >
           Descubrir su historia
@@ -59,8 +58,10 @@
     </div>
   </div>
 
-  <!-- INTRO -->
-  <div id="escuelas" class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+  <!-- CONTENIDO -->
+  <div id="contenido-escuelas" class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+
+    <!-- INTRO -->
     <div class="max-w-4xl mx-auto text-center mb-14">
       <span class="text-lime-400 font-semibold uppercase tracking-wide text-sm">
         Educación
@@ -70,21 +71,24 @@
         Aprender en tiempos difíciles
       </h2>
 
-      <p class="mt-6 text-lg text-white leading-relaxed">
-        Según Madoz (1845-50), Viforcos ya contaba con una escuela de primeras letras a mediados del siglo XIX, 
-        dotada con 420 reales y a la que asistían unos 20 niños.
-      </p>
+      <div class="mt-6 text-lg text-white leading-relaxed space-y-4">
+        <p>
+          Según Madoz (1845-50), Viforcos ya tenía una escuela de primeras letras a mediados del siglo XIX, dotada con 420 reales, a la que asistían 20 niños.
+        </p>
 
-      <p class="mt-4 text-lg text-white leading-relaxed">
-        Posteriormente se construyó una escuela de piedra, datada oficialmente en 1900 aunque se sabe que es anterior. 
-        En ella convivían en un mismo aula niños de distintas edades y sin diferenciación de género, 
-        compartiendo bancos corridos y aprendiendo juntos las primeras nociones de lectura, escritura y matemáticas.
-      </p>
+        <p>
+          Posteriormente se construyó una escuela de piedra que se conserva restaurada. Figura su construcción en 1900, pero se sabe que es anterior, como sucede con otras que figuran con esa fecha.
+        </p>
+
+        <p>
+          Actualmente tiene dos edificios que fueron escuelas.
+        </p>
+      </div>
     </div>
 
     <!-- ICONOS -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-      <div class="rounded-2xl rounded bg-lime-600 p-6 text-center shadow-sm hover:shadow-md transition">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+      <div class="rounded-2xl bg-lime-600 p-6 text-center shadow-sm hover:shadow-md transition">
         <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
           <i data-lucide="book" class="w-7 h-7 text-lime-600"></i>
         </div>
@@ -94,13 +98,13 @@
         </p>
       </div>
 
-      <div class="rounded-2xl rounded p-6 text-center bg-lime-600 shadow-sm hover:shadow-md transition">
+      <div class="rounded-2xl bg-lime-600 p-6 text-center shadow-sm hover:shadow-md transition">
         <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
           <i data-lucide="users" class="w-7 h-7 text-lime-600"></i>
         </div>
-        <h3 class="text-xl font-semibold text-white mb-2">Aula única</h3>
+        <h3 class="text-xl font-semibold text-white mb-2">Aula mixta</h3>
         <p class="text-white">
-          Niños de todas las edades aprendían juntos en un mismo espacio.
+          Niños de distintas edades compartían un mismo espacio de aprendizaje.
         </p>
       </div>
 
@@ -114,59 +118,136 @@
         </p>
       </div>
 
-      <div class="rounded-2xl bg-lime-600  p-6 text-center shadow-sm hover:shadow-md transition">
+      <div class="rounded-2xl bg-lime-600 p-6 text-center shadow-sm hover:shadow-md transition">
         <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-lime-400 flex items-center justify-center">
           <i data-lucide="building" class="w-7 h-7 text-lime-600"></i>
         </div>
-        <h3 class="text-xl font-semibold text-white mb-2">Evolución</h3>
+        <h3 class="text-xl font-semibold text-white mb-2">Nuevos usos</h3>
         <p class="text-white">
-          De escuela rural a espacios sociales y de ocio para el pueblo.
+          De espacios escolares a lugares sociales y de ocio para el pueblo.
         </p>
       </div>
     </div>
 
-    <!-- GALERÍA -->
-    <div class="mb-16">
-      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
-        <div>
-          <span class="text-lime-500 font-semibold uppercase tracking-wide text-sm">
-            Recuerdo
-          </span>
-          <h2 class="mt-2 text-3xl md:text-4xl font-bold text-white font-playfair">
-            Espacios de aprendizaje y convivencia
-          </h2>
-        </div>
+    <!-- ESCUELA VIEJA -->
+    <section class="mb-24">
+      <div class="max-w-4xl mx-auto text-center mb-10">
+        <span class="text-lime-400 font-semibold uppercase tracking-wide text-sm">
+          Escuela antigua
+        </span>
 
-        <p class="text-white max-w-xl">
-          Edificios que marcaron generaciones y que hoy siguen siendo parte de la vida del pueblo.
-        </p>
+        <h2 class="mt-3 text-3xl md:text-5xl font-bold text-white font-playfair">
+          La escuela de la plaza
+        </h2>
+
+        <div class="mt-6 text-lg text-white leading-relaxed space-y-4">
+          <p>
+            En la plaza, de piedra rejuntada con argamasa blanca, con dos alturas y cubierta de teja. Tiene dos ventanas arriba y dos abajo, básicas, para que pudiera entrar la luz y no dejar pasar el frío.
+          </p>
+
+          <p>
+            La puerta de lo que en su día fue vivienda y escuela estaban separadas. La escuela se encontraba en la parte inferior y la vivienda que era usada por la maestra, en la parte superior.
+          </p>
+
+          <p>
+            El aula, sin divisiones y con bancos corridos, albergaba a todos los niños de la localidad sin distinción ni de género ni de edades.
+          </p>
+
+          <p>
+            En la actualidad el edificio está dedicado ya a otros usos y restaurado. En la planta inferior podemos encontrar todavía las dos pizarras que eran usadas por aquellos niños. El resto de elementos que se conservan han sido reubicados en su planta superior para una mejor conservación de los mismos, ya que la planta inferior ahora es utilizada por sus habitantes como teleclub y zona de uso múltiples.
+          </p>
+
+          <p>
+            La planta superior, también restaurada recientemente, contiene todos los restos del material escolar y didáctico usado en el pueblo que se conservan. Incluso han dedicado parte de esta planta a una recreación de aquel colegio, colocando los elementos de tal forma que podemos ver aquella aula con sus pupitres de madera con agujero para el tintero, su mesa de la maestra con su regla de madera o su ábaco, para enseñar a aquellos pequeños sus primeras nociones de escritura, matemáticas o conocimientos generales de historia o ciencias.
+          </p>
+        </div>
       </div>
 
-        <div class="relative w-full mx-auto overflow-hidden rounded-2xl shadow-lg">
-
-        <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
-          <img src="assets/img/Escuelas/EscuelaNueva1.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
-          <img src="assets/img/Escuelas/EscuelaNueva3.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
-          <img src="assets/img/Escuelas/EscuelaVIeja1.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
-          <img src="assets/img/Escuelas/EscuelaVIeja17.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
-          <img src="assets/img/Escuelas/EscuelaVieja21.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
-          <img src="assets/img/Escuelas/EscuelaVieja29.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
-          <img src="assets/img/Escuelas/EscuelaVieja34.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
-          <img src="assets/img/Escuelas/EscuelaVieja4.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
-          <img src="assets/img/Escuelas/EscuelaVieja7.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
-          <img src="assets/img/Escuelas/EscuelaVIeja8.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[900px]" alt="">
+      <!-- CARRUSEL ESCUELA VIEJA -->
+      <div class="relative w-full mx-auto overflow-hidden rounded-2xl shadow-lg">
+        <div id="carousel-vieja" class="flex transition-transform duration-500 ease-in-out">
+          <img src="assets/img/Escuelas/EscuelaVIeja1.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+          <img src="assets/img/Escuelas/EscuelaVIeja17.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+          <img src="assets/img/Escuelas/EscuelaVieja21.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+          <img src="assets/img/Escuelas/EscuelaVieja29.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+          <img src="assets/img/Escuelas/EscuelaVieja34.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+          <img src="assets/img/Escuelas/EscuelaVieja4.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+          <img src="assets/img/Escuelas/EscuelaVieja7.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+          <img src="assets/img/Escuelas/EscuelaVIeja8.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
         </div>
 
-        <button onclick="prevSlide()" class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center text-3xl">
+        <button onclick="prevSlide('vieja')" class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center text-3xl">
           ‹
         </button>
 
-        <button onclick="nextSlide()" class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center text-3xl">
+        <button onclick="nextSlide('vieja')" class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center text-3xl">
           ›
         </button>
       </div>
-    </div>
- 
+    </section>
+
+    <!-- ESCUELA NUEVA -->
+    <section class="mb-20">
+      <div class="max-w-4xl mx-auto text-center mb-10">
+        <span class="text-lime-400 font-semibold uppercase tracking-wide text-sm">
+          Escuela moderna
+        </span>
+
+        <h2 class="mt-3 text-3xl md:text-5xl font-bold text-white font-playfair">
+          La escuela de la entrada del pueblo
+        </h2>
+
+        <div class="mt-6 text-lg text-white leading-relaxed space-y-4">
+          <p>
+            A la entrada del pueblo se encuentra el edificio más moderno usado para ese fin, que en la actualidad ha sido completamente restaurado, aunque ya no conserva ningún elemento que pudiera asociarlo con la presencia de una escuela décadas atrás.
+          </p>
+
+          <p>
+            El plano de la escuela es el simple que presentaban las edificaciones dedicadas para este menester en posguerra. Data de 1959.
+          </p>
+
+          <p>
+            En el Archivo Histórico se recoge que posee 75 metros cuadrados cubiertos de planta y piso y otros 320 metros cuadrados descubiertos. Es producto esta edificación del Plan Nacional de Construcciones Escolares de 1959, con una estructura estándar que establecía el Plan para todo el territorio nacional.
+          </p>
+
+          <p>
+            Está fabricada en ladrillo revocado en cemento y consta de planta y piso, alojándose el aula en la parte inferior y la vivienda del maestro en la parte superior. Está orientada al sur y en la fachada podemos encontrar cuatro ventanas amplias.
+          </p>
+
+          <p>
+            No tiene división horizontal y su propiedad es al 100% de la Junta Vecinal de Viforcos.
+          </p>
+
+          <p>
+            La escuela era mixta y sin diferenciación de edades. La escuela fue suprimida el 1 de septiembre de 1975. Había sido declarada rural desde el 1 de julio de 1949 y de difícil desempeño desde el 1 de enero de 1962.
+          </p>
+
+          <p>
+            Ello da idea de su dificultad de acceso y permanencia, de los escasos recursos y del descenso constante de alumnos hasta hacerla inviable por la despoblación rural masiva a la que la zona se vio sometida desde finales de los años 50.
+          </p>
+
+          <p>
+            En la actualidad ha sido totalmente reformada y se ha convertido en un lugar de ocio para la gente de Viforcos y sus visitantes. El edificio, en su planta baja, se ha reconvertido en un bar, tan importante para nuestros pueblos porque se convierte en un punto de reunión y socialización, para pasar las tardes del frío invierno y compartir historias con los que regresan en verano.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARRUSEL ESCUELA NUEVA -->
+      <div class="relative w-full mx-auto overflow-hidden rounded-2xl shadow-lg">
+        <div id="carousel-nueva" class="flex transition-transform duration-500 ease-in-out">
+          <img src="assets/img/Escuelas/EscuelaNueva1.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+          <img src="assets/img/Escuelas/EscuelaNueva3.jpg" class="w-full flex-shrink-0 object-cover h-[300px] md:h-[600px]" alt="">
+        </div>
+
+        <button onclick="prevSlide('nueva')" class="absolute top-1/2 left-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center text-3xl">
+          ‹
+        </button>
+
+        <button onclick="nextSlide('nueva')" class="absolute top-1/2 right-3 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center text-3xl">
+          ›
+        </button>
+      </div>
+    </section>
 
     <!-- CTA -->
     <div class="rounded-3xl bg-lime-600 text-white px-8 py-12 md:px-14 md:py-16 text-center">
@@ -179,58 +260,65 @@
       </h2>
 
       <p class="mt-5 max-w-3xl mx-auto text-white/90 text-lg leading-relaxed">
-        La escuela fue suprimida en 1975 debido a la despoblación rural. Hoy, estos edificios han sido restaurados 
-        y convertidos en espacios sociales como teleclub o bar, manteniendo su esencia como punto de reunión 
-        donde vecinos y visitantes siguen compartiendo historias.
+        Las antiguas escuelas de Viforcos conservan la memoria de generaciones que aprendieron en ellas y hoy siguen formando parte de la vida del pueblo, convertidas en espacios de reunión, ocio y convivencia.
       </p>
     </div>
+
   </div>
 </section>
 
-
 <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-       
 <script src="https://cdn.jsdelivr.net/npm/lucide@1.7.0/dist/umd/lucide.min.js"></script>
-<script>lucide.createIcons();</script>
+
 <script>
-  let index = 0;
-  const carousel = document.getElementById('carousel');
-  const dots = document.querySelectorAll('#dots span');
-  const total = carousel.children.length;
+  lucide.createIcons();
 
-  function updateCarousel() {
-    carousel.style.transform = `translateX(-${index * 100}%)`;
+  const carousels = {
+    vieja: {
+      index: 0,
+      element: document.getElementById('carousel-vieja')
+    },
+    nueva: {
+      index: 0,
+      element: document.getElementById('carousel-nueva')
+    }
+  };
 
-    dots.forEach((dot, i) => {
-      dot.classList.toggle('bg-white', i === index);
-      dot.classList.toggle('bg-white/50', i !== index);
+  function updateCarousel(name) {
+    const carousel = carousels[name];
+    carousel.element.style.transform = `translateX(-${carousel.index * 100}%)`;
+  }
+
+  function nextSlide(name) {
+    const carousel = carousels[name];
+    const total = carousel.element.children.length;
+    carousel.index = (carousel.index + 1) % total;
+    updateCarousel(name);
+  }
+
+  function prevSlide(name) {
+    const carousel = carousels[name];
+    const total = carousel.element.children.length;
+    carousel.index = (carousel.index - 1 + total) % total;
+    updateCarousel(name);
+  }
+
+  Object.keys(carousels).forEach(name => {
+    const carousel = carousels[name].element;
+    let startX = 0;
+
+    carousel.addEventListener('touchstart', e => {
+      startX = e.touches[0].clientX;
     });
-  }
 
-  function nextSlide() {
-    index = (index + 1) % total;
-    updateCarousel();
-  }
+    carousel.addEventListener('touchend', e => {
+      const endX = e.changedTouches[0].clientX;
 
-  function prevSlide() {
-    index = (index - 1 + total) % total;
-    updateCarousel();
-  }
-
-  // Swipe móvil
-  let startX = 0;
-
-  carousel.addEventListener('touchstart', e => {
-    startX = e.touches[0].clientX;
-  });
-
-  carousel.addEventListener('touchend', e => {
-    let endX = e.changedTouches[0].clientX;
-    if (startX - endX > 50) nextSlide();
-    if (endX - startX > 50) prevSlide();
+      if (startX - endX > 50) nextSlide(name);
+      if (endX - startX > 50) prevSlide(name);
+    });
   });
 </script>
-
 
 </body>
 </html>
